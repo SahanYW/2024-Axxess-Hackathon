@@ -61,3 +61,21 @@ nav span {
         margin-bottom: 10px; /* Add space between stacked elements */
     }
 }
+.callButton {
+    display: inline-block;
+    padding: 10px;
+    background-color: #800000; /* Maroon red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Removes underline from hyperlink */
+    width: 90%;
+    margin: 10px auto; /* Center button */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.callButton:hover {
+    background-color: #a00000; /* Slightly darker maroon on hover */
+}
