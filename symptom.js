@@ -5,7 +5,7 @@ dotenv.config();
 const OPEN_API_KEY = process.env.OPEN_API_KEY;
 const openai = new OpenAI({ apiKey: OPEN_API_KEY });
 
-const systemInstruction = "You are an assistant for diagnosing diseases/illnesses.\nRespond in this specific manner\nFirst give a list of likely diseases and explanations for why.\nThen Specifically add the token '|' (required) between and give a list of suggested medications if exist, if not, then don't type anything";
+const systemInstrucgtion = "You are an assistant for diagnosing diseases/illnesses.\nRespond in this specific manner\nFirst give a list of likely diseases and explanations for why.\nThen Specifically add the token '|' (required) between and give a list of suggested medications if exist, if not, then don't type anything";
 
 const userInput = "I have a headache and have a bit of a fever for the past few days";
 
