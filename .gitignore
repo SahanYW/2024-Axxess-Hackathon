@@ -24,7 +24,3 @@ build/
 # System or hidden files
 .DS_Store
 Thumbs.db
-
-data/
-.ecu_data
-512311_xk3jq6ao_config.json
