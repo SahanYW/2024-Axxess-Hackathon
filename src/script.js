@@ -11,6 +11,7 @@ document.getElementById('medicationBtn').addEventListener('click', function() {
 });
 
 // Redirect to the Enter Symptoms page
-document.getElementById('enterSymptomsBtn').addEventListener('click', function() {
-    window.location.href = 'enter-symptoms.html';
-});
+// document.getElementById('enterSymptomsBtn').addEventListener('click', function() {
+//     // window.location.href = 'enter-symptoms.html';
+//     console.log("jajajajaj");
+// });
