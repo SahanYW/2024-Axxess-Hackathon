@@ -130,6 +130,7 @@ nav span {
     color: #000;
     text-align: left;
     text-indent: 0px;
+    padding-bottom: 10px;
 }
 
 .drpDnIcon {
@@ -143,5 +144,14 @@ nav span {
 
 .probability {
     color: #00C14D;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.findMedication {
+    width: 50%;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
 }
