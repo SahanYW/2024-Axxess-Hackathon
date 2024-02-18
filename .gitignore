@@ -10,7 +10,6 @@ env/
 *.venv/
 .env
 Lib/
-Scripts/
 pyvenv.cfg
 
 # Dependency directories
