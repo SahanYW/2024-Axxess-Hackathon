@@ -27,3 +27,7 @@ build/
 # System or hidden files
 .DS_Store
 Thumbs.db
+
+
+# Environment API Key
+.env
