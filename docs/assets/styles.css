@@ -35,6 +35,7 @@ body, html {
     display: block;
     transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
     text-decoration: none; /* Removes underline from hyperlink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
 }
 .redbutton {
     padding: 40px;
@@ -49,6 +50,7 @@ body, html {
     margin: 10px auto; /* Center buttons */
     display: block;
     transition: transform 0.3s; /* Smooth transformation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
 }
 
 .redbutton span {
@@ -85,6 +87,13 @@ main {
 
 button:hover, .callButton:hover {
     transform: scale(1.05); /* Enlarge button on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.subtext {
+    font-size: 22px; /* Smaller font size */
+    color: #fff; /* Adjust color as needed, using white as an example */
+    display: block; /* Ensure it takes up its own line */
 }
 
 footer {
