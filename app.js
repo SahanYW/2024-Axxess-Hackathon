@@ -37,9 +37,29 @@ function findHospitals(map, location) {
         },
         (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+                const hospitalDetailsList = document.getElementById('hospitalDetails'); // Ensure you have this element in your HTML
+                hospitalDetailsList.innerHTML = ''; // Clear previous results
+
+                const hospitalsJson = []; // Initialize an empty array for JSON data
+
                 for (let i = 0; i < results.length; i++) {
                     createMarker(results[i], map);
+
+                    // Add hospital details in text form
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `Name: ${results[i].name}, Address: ${results[i].vicinity}`;
+                    hospitalDetailsList.appendChild(listItem);
+
+                    // Add hospital data to JSON array
+                    hospitalsJson.push({
+                        name: results[i].name,
+                        address: results[i].vicinity,
+                        position: results[i].geometry.location.toJSON(), // Converts to a simple {lat, lng} object
+                    });
                 }
+
+                // Optionally, do something with the JSON data, e.g., log it, store it, or send it to a server
+                console.log(hospitalsJson);
             }
         }
     );
