@@ -5,13 +5,13 @@ __pycache__/
 *.pyd
 
 # Virtual environment
-Lib/
-Scripts/
-pyvenv.cfg
 venv/
 env/
 *.venv/
 .env
+Lib/
+Scripts/
+pyvenv.cfg
 
 # Dependency directories
 .idea/
