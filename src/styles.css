@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #800000; /* Maroon red color */
+    color: white;
+}
+
+main {
+    padding: 15px;
+    text-align: center;
+}
+
+button {
+    padding: 50px;
+    background-color: #800000; /* Maroon red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    margin: 10px auto; /* Center buttons */
+    display: block;
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+button:hover {
+    transform: scale(1.05); /* Enlarge button on hover */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em; /* Smaller font size for footer text */
+    background-color: #800000; /* Maroon red color */
+}
+
+nav span {
+    display: block;
+    margin-bottom: 5px; /* Add space between footer items */
+}
+
+/* Responsive design for smaller devices like iPhone 14/15 Pro */
+@media only screen and (max-width: 375px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header button, footer nav span {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 10px; /* Add space between stacked elements */
+    }
+}
