@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medications List</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <header>
+        <div class="greeting-container">
+            <span class="ai-title">Medications List</span>
+        </div>
+    </header>
+
+    <div id="medications-list"></div>
+
+    <button onclick="location.href='../index.html'">Back to Home</button>
+
+    <script>
+        // Retrieve JSON data from local storage
+        const data = localStorage.getItem('diagnoseResponse');
+        if (data) {
+            const jsonData = JSON.parse(data);
+            const medications = jsonData.medications;
+
+            // Generate HTML for the list of medications with explanations
+            const medicationsList = document.getElementById('medications-list');
+            const ul = document.createElement('ul');
+
+            medications.forEach(medication => {
+                const li = document.createElement('li');
+                li.textContent = `${medication[0]}: ${medication[1]}`;
+                ul.appendChild(li);
+            });
+
+            medicationsList.appendChild(ul);
+        } else {
+            // Handle case where data is not available in local storage
+            console.error('Symptoms data not found in local storage');
+        }
+    </script>
+</body>
+</html>

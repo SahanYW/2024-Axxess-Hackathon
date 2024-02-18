@@ -1,60 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap');
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
-    font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    /* Ensure all text uses Sofia Sans */
     background-color: lightgray;
 }
+
 .greeting-container {
-    text-align: left; /* Ensure left alignment */
+    text-align: left;
+    /* Ensure left alignment */
     font-size: 45px;
     font-weight: bold;
 }
 
 .diagnose-btn {
-    padding: 20px 50px; 
-    font-size: 24px; 
-    color: white; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    background-image: linear-gradient(to right, #BA243D, #9d407c); 
-    display: block; /* Makes the button a block element */
-    width: max-content; /* Width according to content */
-    margin: 20px auto; 
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+    padding: 20px 50px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #BA243D, #9d407c);
+    display: block;
+    /* Makes the button a block element */
+    width: max-content;
+    /* Width according to content */
+    margin: 20px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transitions for hover effects */
     font-family: 'Sofia Sans', Arial, sans-serif;
 
 }
 
-.diagnose
-footer {
+.diagnose footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 0.8em; /* Smaller font size for footer text */
+    font-size: 0.8em;
+    /* Smaller font size for footer text */
 }
 
-.ai-title
-{
+.ai-title {
     height: 100%;
     margin: 0;
-    font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    /* Ensure all text uses Sofia Sans */
     font-weight: bold;
 }
 
-.greeting, .name {
-    display: block; /* Make each span take up its own line */
-    color: white; /* Adjust color if necessary */
+.greeting,
+.name {
+    display: block;
+    /* Make each span take up its own line */
+    color: white;
+    /* Adjust color if necessary */
 }
 
 .header-buttons {
     display: flex;
     justify-content: space-between;
 }
-.whitebutton{
+
+.whitebutton {
     padding: 40px;
     font-family: 'Sofia Sans', Arial, sans-serif;
     background: white;
@@ -64,51 +75,68 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     width: 90%;
-    margin: 10px auto; /* Center buttons */
+    margin: 10px auto;
+    /* Center buttons */
     display: block;
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
-    text-decoration: none; /* Removes underline from hyperlink */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+    transition: transform 0.3s, background-color 0.3s;
+    /* Smooth transformation and color change */
+    text-decoration: none;
+    /* Removes underline from hyperlink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Horizontal offset, vertical offset, blur radius, color */
 }
+
 .redbutton {
     padding: 40px;
     font-family: 'Sofia Sans', Arial, sans-serif;
-    background: white; /* White button background */
-    color: transparent; /* Initial transparent color for the text */
+    background: white;
+    /* White button background */
+    color: transparent;
+    /* Initial transparent color for the text */
     border: none;
     font-size: 30px;
     border-radius: 10px;
     cursor: pointer;
     width: 90%;
-    margin: 10px auto; /* Center buttons */
+    margin: 10px auto;
+    /* Center buttons */
     display: block;
-    transition: transform 0.3s; /* Smooth transformation */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+    transition: transform 0.3s;
+    /* Smooth transformation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Horizontal offset, vertical offset, blur radius, color */
 }
 
 .redbutton span {
-    background: -webkit-linear-gradient(to bottom right, #BA243D, #9d407c); /* Gradient from red to purple for Webkit browsers */
-    background: linear-gradient(to bottom right, #BA243D, #9d407c); /* Gradient from red to purple for standard CSS */
+    background: -webkit-linear-gradient(to bottom right, #BA243D, #9d407c);
+    /* Gradient from red to purple for Webkit browsers */
+    background: linear-gradient(to bottom right, #BA243D, #9d407c);
+    /* Gradient from red to purple for standard CSS */
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Make the text color transparent to show the gradient */
-    display: inline; /* Inline or inline-block display to fit the text */
+    color: transparent;
+    /* Make the text color transparent to show the gradient */
+    display: inline;
+    /* Inline or inline-block display to fit the text */
 }
 
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Align items vertically */
+    align-items: center;
+    /* Align items vertically */
     padding: 50px;
     background-image: linear-gradient(to bottom right, #9d407c, #BA243D);
     color: white;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D);
+    /* Updated gradient */
     color: white;
 }
 
@@ -119,56 +147,86 @@ main {
 
 }
 
-button:hover, .callButton:hover {
-    transform: scale(1.05); /* Enlarge button on hover */
+button:hover,
+.callButton:hover {
+    transform: scale(1.05);
+    /* Enlarge button on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 .subtext {
-    font-size: 22px; /* Smaller font size */
-    color: #fff; /* Adjust color as needed, using white as an example */
-    display: block; /* Ensure it takes up its own line */
+    font-size: 22px;
+    /* Smaller font size */
+    color: #fff;
+    /* Adjust color as needed, using white as an example */
+    display: block;
+    /* Ensure it takes up its own line */
 }
+
 .symptoms-nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 5 columns */
-    gap: 10px; /* Space between buttons */
+    grid-template-columns: repeat(2, 1fr);
+    /* 5 columns */
+    gap: 10px;
+    /* Space between buttons */
     padding: 10px;
     justify-content: left;
-    max-width: 600px; /* Adjust based on your layout */
+    max-width: 600px;
+    /* Adjust based on your layout */
     margin: auto;
-    text-align: left; /* Aligns inline elements (like inline-block buttons) to the left */
-    padding: 10px; /* Add some padding around the container if needed */
-    margin: auto; /* Centers the container */
+    text-align: left;
+    /* Aligns inline elements (like inline-block buttons) to the left */
+    padding: 10px;
+    /* Add some padding around the container if needed */
+    margin: auto;
+    /* Centers the container */
     /*max-width: 90%;*/
 }
 
 .symptom-btn {
-    padding: 10px 20px; /* Adequate padding around text */
-    font-size: 16px; /* Adjust font size as needed */
-    background-color: #f8f8f8; /* Light gray background */
-    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px;
+    /* Adequate padding around text */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    background-color: #f8f8f8;
+    /* Light gray background */
+    border-radius: 20px;
+    /* Rounded corners */
     cursor: pointer;
-    margin: 5px; /* Space between buttons */
-    border: 1px solid #ddd; /* Light border */
-    display: inline-block; /* Allows the button to size according to its content */
-    transition: background-color 0.3s; /* Smooth transition for background color change */
-    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    margin: 5px;
+    /* Space between buttons */
+    border: 1px solid #ddd;
+    /* Light border */
+    display: inline-block;
+    /* Allows the button to size according to its content */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color change */
+    white-space: nowrap;
+    /* Prevents text from wrapping to a new line */
     font-family: 'Sofia Sans', Arial, sans-serif;
 }
+
 .symptom-btn-active {
-    background-color: rgb(255, 196, 0); /* Active (clicked) button background */
+    background-color: rgb(255, 196, 0);
+    /* Active (clicked) button background */
 }
-  
-button:hover, .callButton:hover {
-    transform: scale(1.05); /* Enlarge button on hover */
+
+button:hover,
+.callButton:hover {
+    transform: scale(1.05);
+    /* Enlarge button on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 .subtext {
-    font-size: 22px; /* Smaller font size */
-    color: #fff; /* Adjust color as needed, using white as an example */
-    display: block; /* Ensure it takes up its own line */
+    font-size: 22px;
+    /* Smaller font size */
+    color: #fff;
+    /* Adjust color as needed, using white as an example */
+    display: block;
+    /* Ensure it takes up its own line */
 }
 
 footer {
@@ -176,7 +234,8 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 0.8em; /* Smaller font size for footer text */
+    font-size: 0.8em;
+    /* Smaller font size for footer text */
 }
 
 .homeBtn {
@@ -185,19 +244,27 @@ footer {
 
 nav span {
     display: block;
-    margin-bottom: 5px; /* Add space between footer items */
+    margin-bottom: 5px;
+    /* Add space between footer items */
 }
 
 /* Responsive design for smaller devices like iPhone 14/15 Pro */
 @media only screen and (max-width: 375px) {
-    header, footer {
+
+    header,
+    footer {
         flex-direction: column;
         align-items: center;
     }
 
-    header button, footer nav span, button, .callButton {
-        width: 100%; /* Full width for smaller screens */
-        margin-bottom: 10px; /* Add space between stacked elements */
+    header button,
+    footer nav span,
+    button,
+    .callButton {
+        width: 100%;
+        /* Full width for smaller screens */
+        margin-bottom: 10px;
+        /* Add space between stacked elements */
     }
 }
 
@@ -209,9 +276,9 @@ nav span {
 }
 
 .drpDnIcon {
-    width:50px;
-    height:50px;
-    position:absolute;
+    width: 50px;
+    height: 50px;
+    position: absolute;
     left: 75px;
     margin-top: -5px;
     rotate: -90deg;
@@ -225,8 +292,34 @@ nav span {
 .findMedication {
     width: 50%;
     text-align: center;
-    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D);
+    /* Updated gradient */
     color: white;
     border-radius: 10px;
     font-size: 25px;
+}
+
+.prompt {
+    align-items: center;
+    text-align: center;
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.input {
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
 }
