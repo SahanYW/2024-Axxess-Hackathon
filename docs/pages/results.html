@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-    <h1>jajajaj</h1>
+    <header>
+        <div>
+            <h1 class="greeting-container">Results</h1>
+            <p>Here's what we found</p>
+        </div>
+    </header>
     <!-- Here you can add form elements to collect appointment details -->
-    <p>Some results</p>
-    <button onclick="location.href='../index.html'">Back to Home</button>
+    
+    <button class="whitebutton drpDnBtn" onclick="location.href='./medication.html'">
+        Influenza (flu)
+        <p class="probability">Highly likely</p>
+    </button>
+    <button class="whitebutton drpDnBtn" onclick="location.href='./medication.html'">
+        Common cold
+        <p class="probability">Likely</p>
+    </button>
+    <button class="whitebutton drpDnBtn" onclick="location.href='./medication.html'">
+        Strep throat
+        <p class="probability">Likely</p>
+    </button>
+    <button class="whitebutton homeBtn" onclick="location.href='../index.html'">Back to Home</button>
     <script src="../assets/script.js"></script>
 </body>
 </html>
