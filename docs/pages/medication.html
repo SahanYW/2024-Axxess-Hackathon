@@ -15,7 +15,7 @@
 
     <div id="medications-list"></div>
 
-    <button onclick="location.href='../index.html'">Back to Home</button>
+    <button class="whitebutton homeBtn" onclick="location.href='../index.html'">Back to Home</button>
 
     <script>
         // Retrieve JSON data from local storage
@@ -27,6 +27,7 @@
             // Generate HTML for the list of medications with explanations
             const medicationsList = document.getElementById('medications-list');
             const ul = document.createElement('ul');
+            ul.className = "diagnosis_info";
 
             medications.forEach(medication => {
                 const li = document.createElement('li');

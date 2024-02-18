@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illnesses List</title>
-    <link rel="stylesheet" href="../assets/results.css">
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
     <header>
@@ -13,8 +13,8 @@
     </header>
 
     <div id="illnesses-list"></div>
-    <button onclick="location.href='./medication.html'"x>Next</button>
-    <button onclick="location.href='../index.html'">Back to Home</button>
+    <button class="whitebutton homeBtn" onclick="location.href='./medication.html'"x>Next</button>
+    <button class="whitebutton homeBtn" onclick="location.href='../index.html'">Back to Home</button>
 
     <script>
         // Retrieve JSON data from local storage
@@ -26,6 +26,7 @@
             // Generate HTML for the list of illnesses with explanations
             const illnessesList = document.getElementById('illnesses-list');
             const ul = document.createElement('ul');
+            ul.className = "diagnosis_info";
 
             illnesses.forEach(illness => {
                 const li = document.createElement('li');
