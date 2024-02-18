@@ -95,6 +95,37 @@ button:hover, .callButton:hover {
     color: #fff; /* Adjust color as needed, using white as an example */
     display: block; /* Ensure it takes up its own line */
 }
+.symptoms-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 columns */
+    gap: 10px; /* Space between buttons */
+    padding: 10px;
+    justify-content: left;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: auto;
+    text-align: left; /* Aligns inline elements (like inline-block buttons) to the left */
+    padding: 10px; /* Add some padding around the container if needed */
+    margin: auto; /* Centers the container */
+    /*max-width: 90%;*/
+}
+
+.symptom-btn {
+    padding: 10px 20px; /* Adequate padding around text */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    margin: 5px; /* Space between buttons */
+    border: 1px solid #ddd; /* Light border */
+    display: inline-block; /* Allows the button to size according to its content */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    font-family: 'Sofia Sans', Arial, sans-serif;
+}
+
+.symptom-btn-active {
+    background-color: rgb(255, 196, 0); /* Active (clicked) button background */
+}
 
 footer {
     position: fixed;
