@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medications List</title>
+    <title>Illnesses List</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
     <header>
         <div class="greeting-container">
-            <span class="ai-title">Medications List</span>
+            <span class="ai-title">Results</span>
         </div>
     </header>
 
-    <div id="medications-list"></div>
-
+    <div id="illnesses-list"></div>
+    <button onclick="location.href='./medication.html'"x>Next</button>
     <button onclick="location.href='../index.html'">Back to Home</button>
 
     <script>
@@ -22,19 +22,19 @@
         const data = localStorage.getItem('diagnoseResponse');
         if (data) {
             const jsonData = JSON.parse(data);
-            const medications = jsonData.medications;
+            const illnesses = jsonData.illnesses;
 
-            // Generate HTML for the list of medications with explanations
-            const medicationsList = document.getElementById('medications-list');
+            // Generate HTML for the list of illnesses with explanations
+            const illnessesList = document.getElementById('illnesses-list');
             const ul = document.createElement('ul');
 
-            medications.forEach(medication => {
+            illnesses.forEach(illness => {
                 const li = document.createElement('li');
-                li.textContent = `${medication[0]}: ${medication[1]}`;
+                li.textContent = `${illness[0]}: ${illness[1]}`;
                 ul.appendChild(li);
             });
 
-            medicationsList.appendChild(ul);
+            illnessesList.appendChild(ul);
         } else {
             // Handle case where data is not available in local storage
             console.error('Symptoms data not found in local storage');

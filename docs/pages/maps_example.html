@@ -9,10 +9,19 @@
             width: 100%;
         }
     </style>
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
+    <header>
+        <div class="greeting-container">
+            <span class="ai-title">Locate A Professional</span>
+            
+            <!-- <span class="name">John Doe</span> -->
+            </div>
+    </header>
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY_HERE&callback=initMap&libraries=places&v=weekly" async defer></script>
+    <ul id="hospitalDetails"></ul>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmjEMLchPuEHXHJ7sLz-7DwB3emnJrTHc&callback=initMap&libraries=places&v=weekly" async defer></script>
     <script src="../scripts/app.js"></script>
 </body>
 </html>
