@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
-    background-color: #fff;
+    background-color: lightgray;
 }
 .greeting-container {
     text-align: left; /* Ensure left alignment */
@@ -21,6 +21,45 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
+.whitebutton{
+    padding: 40px;
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    margin: 10px auto; /* Center buttons */
+    display: block;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
+    text-decoration: none; /* Removes underline from hyperlink */
+}
+.redbutton {
+    padding: 40px;
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    background: white; /* White button background */
+    color: transparent; /* Initial transparent color for the text */
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    margin: 10px auto; /* Center buttons */
+    display: block;
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.redbutton span {
+    background: -webkit-linear-gradient(to bottom right, #BA243D, #9d407c); /* Gradient from red to purple for Webkit browsers */
+    background: linear-gradient(to bottom right, #BA243D, #9d407c); /* Gradient from red to purple for standard CSS */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text color transparent to show the gradient */
+    display: inline; /* Inline or inline-block display to fit the text */
+}
+
 
 header {
     display: flex;
@@ -44,25 +83,8 @@ main {
     font-size: 20px;
 }
 
-button, .callButton {
-    padding: 40px;
-    font-family: 'Sofia Sans', Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
-    color: white;
-    border: none;
-    font-size: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 90%;
-    margin: 10px auto; /* Center buttons */
-    display: block;
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
-    text-decoration: none; /* Removes underline from hyperlink */
-}
-
 button:hover, .callButton:hover {
     transform: scale(1.05); /* Enlarge button on hover */
-    background-color: #a00000; /* Slightly darker maroon on hover for contrast */
 }
 
 footer {
