@@ -44,13 +44,24 @@ button {
     box-shadow: 0px 5px rgb(192, 188, 188); 
 }
 
+
+
+
 #insurance-btn {
     background-color: white;
 }
 
-#emergency-text {
-    display: flex;
-    justify-content: center;
+
+
+@media (max-width: 768px) {
+    button {
+        padding: 10px;
+        width: 60%; /* Increase width for smaller screens */
+        font-size: smaller; /* Adjust font size if necessary */
+    }
+}
+main {
     padding: 15px;
-    color: black;
+    text-align: center;
+    font-size: 20px;
 }
