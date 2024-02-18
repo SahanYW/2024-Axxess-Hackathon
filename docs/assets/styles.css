@@ -4,11 +4,19 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
-    background-color: #fff;
+    background-color: lightgray;
 }
 .greeting-container {
     text-align: left; /* Ensure left alignment */
     font-size: 45px;
+    font-weight: bold;
+
+.ai-title
+{
+    height: 100%;
+    margin: 0;
+    font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
+    font-weight: bold;
 }
 
 .greeting, .name {
@@ -20,6 +28,47 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
+.whitebutton{
+    padding: 40px;
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    margin: 10px auto; /* Center buttons */
+    display: block;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
+    text-decoration: none; /* Removes underline from hyperlink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+}
+.redbutton {
+    padding: 40px;
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    background: white; /* White button background */
+    color: transparent; /* Initial transparent color for the text */
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    margin: 10px auto; /* Center buttons */
+    display: block;
+    transition: transform 0.3s; /* Smooth transformation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+.redbutton span {
+    background: -webkit-linear-gradient(to bottom right, #BA243D, #9d407c); /* Gradient from red to purple for Webkit browsers */
+    background: linear-gradient(to bottom right, #BA243D, #9d407c); /* Gradient from red to purple for standard CSS */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text color transparent to show the gradient */
+    display: inline; /* Inline or inline-block display to fit the text */
+}
+
 
 header {
     display: flex;
@@ -40,27 +89,60 @@ header{
 main {
     padding: 15px;
     text-align: center;
-}
+    font-size: 20px;
 
-button, .callButton {
-    padding: 40px;
-    font-family: 'Sofia Sans', Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
-    color: white;
-    border: none;
-    font-size: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 90%;
-    margin: 10px auto; /* Center buttons */
-    display: block;
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
-    text-decoration: none; /* Removes underline from hyperlink */
 }
 
 button:hover, .callButton:hover {
     transform: scale(1.05); /* Enlarge button on hover */
-    background-color: #a00000; /* Slightly darker maroon on hover for contrast */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.subtext {
+    font-size: 22px; /* Smaller font size */
+    color: #fff; /* Adjust color as needed, using white as an example */
+    display: block; /* Ensure it takes up its own line */
+}
+.symptoms-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 columns */
+    gap: 10px; /* Space between buttons */
+    padding: 10px;
+    justify-content: left;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: auto;
+    text-align: left; /* Aligns inline elements (like inline-block buttons) to the left */
+    padding: 10px; /* Add some padding around the container if needed */
+    margin: auto; /* Centers the container */
+    /*max-width: 90%;*/
+}
+
+.symptom-btn {
+    padding: 10px 20px; /* Adequate padding around text */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    margin: 5px; /* Space between buttons */
+    border: 1px solid #ddd; /* Light border */
+    display: inline-block; /* Allows the button to size according to its content */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    font-family: 'Sofia Sans', Arial, sans-serif;
+}
+.symptom-btn-active {
+    background-color: rgb(255, 196, 0); /* Active (clicked) button background */
+}
+  
+button:hover, .callButton:hover {
+    transform: scale(1.05); /* Enlarge button on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.subtext {
+    font-size: 22px; /* Smaller font size */
+    color: #fff; /* Adjust color as needed, using white as an example */
+    display: block; /* Ensure it takes up its own line */
 }
 
 footer {
@@ -69,6 +151,10 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 0.8em; /* Smaller font size for footer text */
+}
+
+.homeBtn {
+    width: 50%;
 }
 
 nav span {
@@ -87,4 +173,34 @@ nav span {
         width: 100%; /* Full width for smaller screens */
         margin-bottom: 10px; /* Add space between stacked elements */
     }
+}
+
+.drpDnBtn {
+    color: #000;
+    text-align: left;
+    text-indent: 0px;
+    padding-bottom: 10px;
+}
+
+.drpDnIcon {
+    width:50px;
+    height:50px;
+    position:absolute;
+    left: 75px;
+    margin-top: -5px;
+    rotate: -90deg;
+}
+
+.probability {
+    color: #00C14D;
+    font-size: 20px;
+}
+
+.findMedication {
+    width: 50%;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
 }

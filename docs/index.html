@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +7,22 @@
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
     <header>
         <div class="greeting-container">
             <span class="greeting">Good Morning,</span>
-            <span class="name">John Doe</span>
+            <span class="name"> Shaka Zulu</span>
         </div>
     </header>
     <main>
-        <button id="makeAppointmentBtn" onclick="location.href='./pages/make-appointment.html'">DIAGNOSIS</button>
-        <button id="medicationBtn" onclick="location.href='./pages/medication.html'">CHRONIC</button>
-        <button id="enterSymptomsBtn" onclick="location.href='./pages/enter-symptoms.html'">EMERGENCY</button>
+        <button id="whitebutton" onclick="location.href='./pages/make-appointment.html'">Quick-Diagnose</button>
+        <button class= "redbutton" id="medicationBtn" onclick="location.href='./pages/medication.html'"><span>AI-Diagnose*</span></button>
+        <button id="whitebutton" onclick="location.href='./pages/Insurance.html'">Medical Search</button>
+        <p class="emergency-call">If you are having an emergency, call <a href="tel:4695369337">911</a></p>
     </main>
     <script src="./assets/script.js"></script>
 </body>
-
 </html>
