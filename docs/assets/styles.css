@@ -9,6 +9,7 @@ body, html {
 .greeting-container {
     text-align: left; /* Ensure left alignment */
     font-size: 45px;
+    font-weight: bold;
 }
 
 .greeting, .name {
