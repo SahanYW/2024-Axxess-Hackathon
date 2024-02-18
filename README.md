@@ -4,4 +4,4 @@
 
 "At home solution for at home care"
 
-We've created an app that allows patients to find health care professionals and the medication you need with ease
+We've created an app that allows you to find health care professionals and the medication you need with ease
