@@ -41,7 +41,9 @@ function handleSubmit(event) {
             
             // Store the response in local storage
             localStorage.setItem('diagnoseResponse', JSON.stringify(data));
+            // localStorage.getItem('diagnoseResponse')
             console.log('Response stored in local storage');
+            window.location.href = "results.html";
         })
         .catch(error => {
             console.error('There was a problem with your fetch operation:', error);
@@ -50,3 +52,4 @@ function handleSubmit(event) {
 
 // Attach form submission event listener
 document.getElementById('symptoms-form').addEventListener('submit', handleSubmit);
+
