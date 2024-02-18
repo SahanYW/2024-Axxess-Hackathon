@@ -48,8 +48,8 @@ button, .callButton {
     background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
     color: white;
     border: none;
-    font-size: 25px;
-    border-radius: 5px;
+    font-size: 30px;
+    border-radius: 10px;
     cursor: pointer;
     width: 90%;
     margin: 10px auto; /* Center buttons */
