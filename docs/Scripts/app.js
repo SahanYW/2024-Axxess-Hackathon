@@ -26,7 +26,6 @@ function initMap() {
         handleLocationError(false, map.getCenter());
     }
 }
-
 function findHospitals(map, location) {
     const service = new google.maps.places.PlacesService(map);
     service.nearbySearch(
@@ -42,19 +41,22 @@ function findHospitals(map, location) {
 
                 const hospitalsJson = []; // Initialize an empty array for JSON data
 
-                for (let i = 0; i < results.length; i++) {
+                for (let i = 0; i < results.length && i < 3; i++) { // Limit to 3 results for simplicity
                     createMarker(results[i], map);
 
-                    // Add hospital details in text form
+                    // Add hospital details with Google Maps directions link
                     const listItem = document.createElement('li');
-                    listItem.textContent = `Name: ${results[i].name}, Address: ${results[i].vicinity}`;
+                    const hospitalLocation = results[i].geometry.location;
+                    const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${hospitalLocation.lat()},${hospitalLocation.lng()}`;
+                    listItem.innerHTML = `${results[i].name}, Address: ${results[i].vicinity} <a href="${directionsUrl}" target="_blank">Directions</a>`;
                     hospitalDetailsList.appendChild(listItem);
 
                     // Add hospital data to JSON array
                     hospitalsJson.push({
                         name: results[i].name,
                         address: results[i].vicinity,
-                        position: results[i].geometry.location.toJSON(), // Converts to a simple {lat, lng} object
+                        position: hospitalLocation.toJSON(), // Converts to a simple {lat, lng} object
+                        directionsUrl: directionsUrl
                     });
                 }
 
