@@ -5,13 +5,12 @@ body, html {
     margin: 0;
     font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
     background-color: lightgray;
-
 }
 .greeting-container {
     text-align: left; /* Ensure left alignment */
     font-size: 45px;
     font-weight: bold;
-}
+
 .ai-title
 {
     height: 100%;
@@ -94,22 +93,47 @@ main {
 
 }
 
-button, .callButton {
-    padding: 40px;
-    font-family: 'Sofia Sans', Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
-    color: white;
-    border: none;
-    font-size: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 90%;
-    margin: 10px auto; /* Center buttons */
-    display: block;
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
-    text-decoration: none; /* Removes underline from hyperlink */
+button:hover, .callButton:hover {
+    transform: scale(1.05); /* Enlarge button on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.subtext {
+    font-size: 22px; /* Smaller font size */
+    color: #fff; /* Adjust color as needed, using white as an example */
+    display: block; /* Ensure it takes up its own line */
+}
+.symptoms-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 columns */
+    gap: 10px; /* Space between buttons */
+    padding: 10px;
+    justify-content: left;
+    max-width: 600px; /* Adjust based on your layout */
+    margin: auto;
+    text-align: left; /* Aligns inline elements (like inline-block buttons) to the left */
+    padding: 10px; /* Add some padding around the container if needed */
+    margin: auto; /* Centers the container */
+    /*max-width: 90%;*/
 }
 
+.symptom-btn {
+    padding: 10px 20px; /* Adequate padding around text */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    margin: 5px; /* Space between buttons */
+    border: 1px solid #ddd; /* Light border */
+    display: inline-block; /* Allows the button to size according to its content */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    font-family: 'Sofia Sans', Arial, sans-serif;
+}
+.symptom-btn-active {
+    background-color: rgb(255, 196, 0); /* Active (clicked) button background */
+}
+  
 button:hover, .callButton:hover {
     transform: scale(1.05); /* Enlarge button on hover */
     transform: translateY(-2px);
