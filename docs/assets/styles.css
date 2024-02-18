@@ -10,6 +10,32 @@ body, html {
     text-align: left; /* Ensure left alignment */
     font-size: 45px;
     font-weight: bold;
+}
+
+.diagnose-btn {
+    padding: 20px 50px; 
+    font-size: 24px; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    background-image: linear-gradient(to right, #BA243D, #9d407c); 
+    display: block; /* Makes the button a block element */
+    width: max-content; /* Width according to content */
+    margin: 20px auto; 
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+    font-family: 'Sofia Sans', Arial, sans-serif;
+
+}
+
+.diagnose
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em; /* Smaller font size for footer text */
+}
 
 .ai-title
 {
