@@ -1,4 +1,3 @@
-// This script should be linked to your index.html file
 
 // Redirect to the Make an Appointment page
 document.getElementById('makeAppointmentBtn').addEventListener('click', function() {
