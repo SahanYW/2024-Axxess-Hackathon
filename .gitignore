@@ -23,6 +23,7 @@ dist/
 build/
 *.egg-info/
 *.egg
+Include/
 
 # System or hidden files
 .DS_Store
