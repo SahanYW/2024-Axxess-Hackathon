@@ -1,15 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap');
+
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
     background-color: #fff;
 }
+.greeting-container {
+    text-align: left; /* Ensure left alignment */
+    font-size: 45px;
+}
 
-header, footer {
+.greeting, .name {
+    display: block; /* Make each span take up its own line */
+    color: white; /* Adjust color if necessary */
+}
+
+.header-buttons {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #800000; /* Maroon red color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D);
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
     color: white;
 }
 
@@ -18,21 +42,25 @@ main {
     text-align: center;
 }
 
-button {
-    padding: 50px;
-    background-color: #800000; /* Maroon red color */
+button, .callButton {
+    padding: 40px;
+    font-family: 'Sofia Sans', Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
     color: white;
     border: none;
-    border-radius: 5px;
+    font-size: 30px;
+    border-radius: 10px;
     cursor: pointer;
     width: 90%;
     margin: 10px auto; /* Center buttons */
     display: block;
-    transition: transform 0.3s; /* Smooth transformation */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transformation and color change */
+    text-decoration: none; /* Removes underline from hyperlink */
 }
 
-button:hover {
+button:hover, .callButton:hover {
     transform: scale(1.05); /* Enlarge button on hover */
+    background-color: #a00000; /* Slightly darker maroon on hover for contrast */
 }
 
 footer {
@@ -41,7 +69,6 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 0.8em; /* Smaller font size for footer text */
-    background-color: #800000; /* Maroon red color */
 }
 
 nav span {
@@ -56,7 +83,7 @@ nav span {
         align-items: center;
     }
 
-    header button, footer nav span {
+    header button, footer nav span, button, .callButton {
         width: 100%; /* Full width for smaller screens */
         margin-bottom: 10px; /* Add space between stacked elements */
     }
