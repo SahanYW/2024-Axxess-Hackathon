@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-    <h1>Make an Appointment</h1>
+    <header>
+        <div class="greeting-container">
+            <span class="ai-title">Results</span>
+
+            
+            <!-- <span class="name">John Doe</span> -->
+            </div>
+    </header>
+    <form id="symptoms-form">
+        <label for="symptoms">Enter your symptoms:</label><br>
+        <input type="text" id="symptoms" name="symptoms"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
     <!-- Here you can add form elements to collect appointment details -->
-    <p>Appointment form coming soon...</p>
+    <!-- <p>Appointment form coming soon...</p> -->
     <button onclick="location.href='../index.html'">Back to Home</button>
     <script src="../assets/script.js"></script>
+    <script src="../Scripts/api.js"></script>
+    
 </body>
 </html>

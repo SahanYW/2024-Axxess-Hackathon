@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-    <h1>Enter Symptoms</h1>
+    <header><div class="greeting-container">
+        <span class="ai-title">Enter Symptoms</span>
+        
+        <!-- <span class="name">John Doe</span> -->
+        </div></header>
+    <form id="symptoms-form">
+        <label for="symptoms">Enter your symptoms:</label><br>
+        <input type="text" id="symptoms" name="symptoms"><br><br>
+        <button type="submit">Submit</button>
+    </form>
     <!-- Input field for symptoms could go here -->
-    <p>Symptom input form coming soon...</p>
+
     <button onclick="location.href='../index.html'">Back to Home</button>
-    <script src="../assets/script.js"></script>
+    <script src="../Scripts/api.js"></script>
 </body>
 </html>
 
