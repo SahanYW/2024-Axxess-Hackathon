@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Results</title>
-    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Locate Page</title>
+    <link rel="stylesheet" href="../assets/Results.css">
 </head>
 <body>
-    <header>
+    <div id="top-bar">
+        <header id="title">Results</header>
+        <h1>Here's what we found</h1>
+    </div>
+
+    <div>
         <div>
-            <h1 class="greeting-container">Results</h1>
-            <h2>Here's what we found</h2>
+            <button>
+                <image id="dropdown-arrow" src="../assets/dropdown-arrow.png" alt="dropdown-arrow"></image>
+                <h1 id="result-1">Influenza (flu)</h1>
+                <h2 id="likely-1">Highly likely</h2>
+            </button>
         </div>
-    </header>
-    <!-- Here you can add form elements to collect appointment details -->
-    
-    <button class="whitebutton drpDnBtn" onclick="location.href='./medication.html'">
-        Influenza (flu)
-        <p class="probability">Highly likely</p>
-        <p class="findMedication">Find medication</p>
-    </button>
-    <button class="whitebutton drpDnBtn" onclick="location.href='./medication.html'">
-        Common cold
-        <p class="probability">Likely</p>
-        <p class="findMedication">Find medication</p>
-    </button>
-    <button class="whitebutton drpDnBtn" onclick="location.href='./medication.html'">
-        Strep throat
-        <p class="probability">Likely</p>
-        <p class="findMedication">Find medication</p>
-    </button>
-    <button class="whitebutton homeBtn" onclick="location.href='../index.html'">Back to Home</button>
-    <script src="../assets/script.js"></script>
+    </div>
 </body>
 </html>
