@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Sofia Sans', Arial, sans-serif; /* Ensure all text uses Sofia Sans */
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, #9d407c, #BA243D); /* Updated gradient */
+    color: white;
+    text-align: left; /* Ensure left alignment */
+    font-size: 45px;
+}
